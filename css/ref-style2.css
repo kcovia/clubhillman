@@ -1,0 +1,157 @@
+body, html {
+	background: #fff;
+	font-family: "Myriad Pro",Helvetica, sans-serif;
+}
+
+.wrapper {
+	background: inherit;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	border-radius: 0.5em;
+}
+
+.header {
+	margin: 0 0;
+	color: #111;
+	text-transform: lowercase;
+	text-align: center;
+
+}
+
+h1{
+	margin: 2% 0 0 2%;
+
+}
+
+h1 a {
+	color: #222;
+	text-decoration: none;
+}
+
+h1 span {
+	color: #3E75BB;
+	opacity: .8;
+}
+
+
+h1 a:hover {
+	opacity: .8;
+}
+
+h2 {
+	color: #aaa;
+	margin: 0.4% 2% 2% 2%;
+	font-weight: normal;
+	font-size: 1.1em;
+	text-transform: lowercase;
+}
+
+
+/*LISTINGS*/
+.listings ul {
+	margin: 3% 0 0 0;
+	padding:0;
+
+}
+.listings li {
+	opacity: 1;
+	list-style-type: none;
+	padding: 0;
+	margin:  1% 2.5%;
+	float: left;
+	width: 20%;
+	margin-bottom: 0;
+
+}
+
+.listings img {
+	background-color: #999;
+	max-width: 100%;
+	border: 5px solid #f0f0f0;
+	border-radius: 0.3em;
+	padding: 0%;
+	margin:  0 0 5% 0;
+}
+
+
+.listings a {
+	text-decoration: none;
+	margin: 0;
+	padding:0;
+}
+
+.listings a:hover {
+	opacity: .8;
+}
+
+.listings .item-inner {
+	margin: 0;
+	padding: 0;
+}
+
+/*INFO PAGE*/
+.item-info {
+	padding: 0 1em;
+}
+
+.item-info img {
+	display: block;
+	max-width: 100%;
+}
+
+
+/*Footer copyright*/
+#copyright {
+	text-align: center;
+	margin: 0;
+}
+
+/*Media Queries - always at bottom*/
+
+
+/* Small Resolution -----*/
+@media screen and (max-width: 480px) {
+	.grid-1,
+	.grid-2,
+	.grid-3,
+	.grid-4,
+	.grid-5,
+	.grid-6,
+	.grid-7,
+	.grid-8,
+	.grid-9,
+	.grid-10,
+	.grid-11,
+	.grid-12 {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	
+	.item-info {
+		padding: 0 5%;
+		max-width: 95%;
+	}
+	
+	.listings li {
+		width: 45%;
+		min-width: 7.6em;
+	}
+	
+	
+}
+
+/*Medium Resolution*/
+@media screen and (max-width: 1024px) {
+	
+	
+	.listings li {
+		display: block;
+		width: 27%;	
+
+	}
+
+	h2 {
+		clear: all;
+	}
+}

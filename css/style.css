@@ -1,0 +1,262 @@
+body, html {
+	font-family: "Myriad Pro",Helvetica, sans-serif;
+	height: 100%;
+
+	 /* fallback */
+	background: -webkit-linear-gradient(#F9EFDC, #fff); /* For Safari */
+	background: -o-linear-gradient(#F9EFDC, #fff); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#F9EFDC,  #fff); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#fff, #F7EFE8); /* Standard syntax */
+
+	background: #fefefe;	
+}
+
+.topbar {
+	background: #333;
+	margin: 0;
+	color: #333;
+	height: 1.2em;
+}
+
+
+header {
+	border-bottom: 3px solid #333;
+	margin: 0;
+}
+
+
+
+
+/*SHIRT - LEFT SIDE*/
+img {
+	max-width: 95%;
+	border-radius: 4px;
+	border: 3px solid #eee;
+}
+
+#tshirt-big {
+	display: none;
+}
+
+
+#design-button {
+	background: no-repeat url('../images/design-small.png');
+	width: 3.35em;
+	height: 3.35em;
+	padding: 0;
+	border: none;
+	margin: 0%;
+	border: 2px solid #ddd;
+}
+
+#tshirt-button {
+	background: no-repeat url('../images/tshirt-small.png');
+	width: 3.35em;
+	height: 3.35em;
+	padding: 0;
+	border: none;
+	margin: 0%;
+		border: 2px solid #ddd;
+}
+
+
+
+.shirt  {
+	margin-top: 1em;
+
+}
+
+
+
+.shirt ul {
+	margin: 0% 1%;
+	padding: 0;
+}
+.shirt ul li {
+	display: inline;
+}
+
+/*INFO - RIGHT SIDE*/
+
+.info {
+	margin-top: 1.5em;
+	
+}
+
+h1 {
+	font-size: 2.5em;
+	text-transform: capitalize;
+	font-family: "Futura Bold", Helvetica, sans-serif;
+	margin: 0% 0 0% 0;
+
+}
+
+
+
+h2 {
+	
+	font-family: "Futura", Helvetica, sans-serif;
+	font-size: 1em;
+	margin: 0;
+	padding: 0;
+	color: #333;
+	padding-bottom: 1%;
+	font-weight: normal;	
+}
+
+.info {
+	text-align: center;
+}
+
+.info ul {
+	width: 100%;
+	margin: 6% 0;
+	padding: 0;
+}
+
+.info ul li {
+	display: inline;
+	list-style-type: none;
+}
+
+.info ul li a {
+	padding: 2% 3%;
+	margin-right: 1%;
+	font-size: 1.2em;
+	border: 2px solid #2E3B60;
+	border-radius: .3em;
+	text-decoration: none;
+	color: #2E3B60;
+
+}
+
+
+
+.info ul li a:hover {
+	background: #2E3B60;
+	color: #fff;
+
+}
+
+#price {
+	font-size: 1.6em;
+	font-weight: bold;	
+	
+}
+
+.size {
+	margin: 2% 0 0 0;
+		
+}	
+
+.info #sizing-chart {
+	text-transform: lowercase;
+}
+
+.info #sizing-chart a {
+	font-size: 0.8em;
+	text-decoration: underline;
+	color: #222;
+}
+
+
+/*Bottom */
+
+	
+.about  {
+	margin-top: 0% 0;
+	text-align: center;
+}	
+	
+.about h3 {
+	border-bottom: 3px solid #D9DCE2;
+	margin: 5% 0 3% 0;
+	padding: 0;
+
+}
+
+.about p {
+	
+
+	padding: 0% 0;
+	margin: 3% 0;
+
+}
+
+table {
+	width: 100%;
+}
+
+table td {
+
+	
+}
+
+.inches {
+	font-size: .9em;
+	margin-top: 4%;
+	font-style: italic;
+}
+
+
+/*Footer copyright*/
+
+#footer {
+	
+	text-align: center;
+	padding: 3% 0;
+
+	}
+#copyright a {
+
+	text-decoration: none;
+	color: #ccc;
+
+
+}
+
+
+/*Media Queries - always at bottom*/
+
+
+/* Small Resolution -----*/
+@media screen and (max-width: 480px) {
+	.grid-1,
+	.grid-2,	
+	.grid-3,
+	.grid-4,
+	.grid-5,
+	.grid-6,
+	.grid-7,
+	.grid-8,
+	.grid-9,
+	.grid-10,
+	.grid-11,
+	.grid-12 {
+		width: 98%;
+		margin: 0 2%;
+
+
+	}
+	
+	
+	.shirt {
+		text-align: center;
+	}
+ 
+
+}
+
+/*Medium Resolution*/
+@media screen and (max-width: 1024px) {
+	.shirt {
+	
+	}
+	
+	.info {
+
+	}
+	
+
+
+}
