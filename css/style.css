@@ -64,7 +64,10 @@ img {
 
 .shirt  {
 	margin-top: 1em;
+}
 
+.shirt img {
+	background: #fff;
 }
 
 
