@@ -1,180 +1,262 @@
 body, html {
 	font-family: "Myriad Pro",Helvetica, sans-serif;
 	height: 100%;
-	 /* fallback */
-	background: #F4D198;	
 
+	 /* fallback */
+	background: -webkit-linear-gradient(#F9EFDC, #fff); /* For Safari */
+	background: -o-linear-gradient(#F9EFDC, #fff); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#F9EFDC,  #fff); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#fff, #F7EFE8); /* Standard syntax */
+
+	background: #fefefe;	
 }
+
+.topbar {
+	background: #333;
+	margin: 0;
+	color: #333;
+	height: 1.2em;
+}
+
+
+header {
+	border-bottom: 3px solid #333;
+	margin: 0;
+}
+
 
 
 
 /*SHIRT - LEFT SIDE*/
 img {
-	max-width: 100%;
+	max-width: 95%;
+	border-radius: 4px;
+	border: 3px solid #eee;
 }
 
-.shirt {
+#tshirt-big {
+	display: none;
+}
 
+
+#design-button {
+	background: no-repeat url('../images/design-small.png');
+	width: 3.35em;
+	height: 3.35em;
+	padding: 0;
+	border: none;
+	margin: 0%;
+	border: 2px solid #ddd;
+}
+
+#tshirt-button {
+	background: no-repeat url('../images/tshirt-small.png');
+	width: 3.35em;
+	height: 3.35em;
+	padding: 0;
+	border: none;
+	margin: 0%;
+		border: 2px solid #ddd;
+}
+
+
+
+.shirt  {
+	margin-top: 1em;
+
+}
+
+
+
+.shirt ul {
+	margin: 0% 1%;
+	padding: 0;
+}
+.shirt ul li {
+	display: inline;
 }
 
 /*INFO - RIGHT SIDE*/
 
 .info {
-
+	margin-top: 1.5em;
+	
 }
+
 h1 {
-	font-size: 8.2em;
-	text-transform: uppercase;
+	font-size: 2.5em;
+	text-transform: capitalize;
 	font-family: "Futura Bold", Helvetica, sans-serif;
-	opacity: .9;
 	margin: 0% 0 0% 0;
 
 }
 
 
-h1 #club {
-	color: #222;
-	margin-right: -0.3em;
-}
-
-h1 #hillman {
-	color: #fff;
-		text-shadow: 1px 2px #111;
-}
 
 h2 {
-	text-transform: uppercase;
+	
 	font-family: "Futura", Helvetica, sans-serif;
-	font-size: 2.5em;
+	font-size: 1em;
 	margin: 0;
 	padding: 0;
 	color: #333;
-		opacity: .9;
+	padding-bottom: 1%;
+	font-weight: normal;	
 }
 
 .info {
-	margin-top: 5%;
+	text-align: center;
 }
 
 .info ul {
-
 	width: 100%;
 	margin: 6% 0;
 	padding: 0;
-
 }
 
 .info ul li {
 	display: inline;
 	list-style-type: none;
-
-
 }
 
 .info ul li a {
-	background: #F9EFDC;
-	padding: 2%;
+	padding: 2% 3%;
 	margin-right: 1%;
-	border: 1px solid #ccc;
-	border-radius: .2em;
-	text-decoration: none;
-	color: #222;
 	font-size: 1.2em;
+	border: 2px solid #2E3B60;
+	border-radius: .3em;
+	text-decoration: none;
+	color: #2E3B60;
 
 }
+
+
 
 .info ul li a:hover {
-	background: #333;
-	color: #ddd;
-}
+	background: #2E3B60;
+	color: #fff;
 
-.info p {
-	margin: 5% 0;
 }
 
 #price {
-	font-size: 1.2em;
-	background: #333;
-	padding: 2%;
-	color: #eee;
-	border-radius: .2em;
-	margin: 0 3%;
-
-	float: left;
+	font-size: 1.6em;
+	font-weight: bold;	
+	
 }
 
-#select-your-size{
-	font-size: 1em;
-	margin-right: 2%;
-
+.size {
+	margin: 2% 0 0 0;
+		
 }	
 
 .info #sizing-chart {
-
-	margin: -3% 0 0% 0%;
 	text-transform: lowercase;
 }
 
 .info #sizing-chart a {
 	font-size: 0.8em;
-
 	text-decoration: underline;
 	color: #222;
-
 }
 
-.info #sizing-chart a:hover {
-	color: #777;
-}
-
-.info #hillman-text {
-	font-size: 1em;
-
-}
 
 /*Bottom */
 
-.bottom {
-	margin-top: 3%;
-	background: #eee;
-	border: 1px solid #ccc;
-	border-radius: .4em;
-	padding: 0 2%;
+	
+.about  {
+	margin-top: 0% 0;
+	text-align: center;
+}	
+	
+.about h3 {
+	border-bottom: 3px solid #D9DCE2;
+	margin: 5% 0 3% 0;
+	padding: 0;
+
 }
 
-.bottom p {
-	margin-top: -5%;
-	font-size: 1em;
-}
+.about p {
 	
+
+	padding: 0% 0;
+	margin: 3% 0;
+
+}
+
+table {
+	width: 100%;
+}
+
+table td {
+
+	
+}
+
+.inches {
+	font-size: .9em;
+	margin-top: 4%;
+	font-style: italic;
+}
+
+
+/*Footer copyright*/
+
+#footer {
+	
+	text-align: center;
+	padding: 3% 0;
+
+	}
+#copyright a {
+
+	text-decoration: none;
+	color: #ccc;
+
+
+}
+
+
+/*Media Queries - always at bottom*/
+
+
+/* Small Resolution -----*/
+@media screen and (max-width: 480px) {
+	.grid-1,
+	.grid-2,	
+	.grid-3,
+	.grid-4,
+	.grid-5,
+	.grid-6,
+	.grid-7,
+	.grid-8,
+	.grid-9,
+	.grid-10,
+	.grid-11,
+	.grid-12 {
+		width: 98%;
+		margin: 0 2%;
+
+
+	}
+	
+	
+	.shirt {
+		text-align: center;
+	}
+ 
+
+}
 
 /*Medium Resolution*/
 @media screen and (max-width: 1024px) {
-	.shirt img {
-		max-width: 100%;
+	.shirt {
+	
 	}
-
-}
-
-@media screen and (max-width: 768px) {
+	
 	.info {
-		margin-left: 1%;
-	}
-	
-	.info ul {
 
 	}
-	.info ul li a {
-		background: #F9EFDC;
-		padding: 2%;
-		margin-right: 1%;
-		border-radius: .2em;
-		text-decoration: none;
-		color: #222;
-		font-size: 2em;
-		clear: all;
-		width: 20%;
-		text-align: center;
-	}
 	
+
+
 }
